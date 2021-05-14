@@ -1,0 +1,771 @@
+/* start main rule  */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.countaner {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #777;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    text-transform: capitalize;
+    color: #555;
+}
+
+h2 {
+    text-transform: capitalize;
+    color: #555;
+}
+
+h3 {
+    text-transform: capitalize;
+    color: #555;
+}
+
+button {
+    font-weight: bold;
+}
+
+/* end main rule  */
+
+/* start media  */
+
+/* small */
+
+@media (min-width: 768px) {
+    .countaner {
+        width: 760;
+    }
+}
+
+/* mediam */
+
+@media (min-width: 992px) {
+    .countaner {
+        width: 970;
+    }
+}
+
+/* large */
+
+@media (min-width: 1200px) {
+    .countaner {
+        width: 1170px;
+    }
+}
+
+/* end media  */
+
+/* start header  */
+
+.header .nav {
+    background-color: #252F31;
+}
+
+.header .nav .countaner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header .nav .countaner .first {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .nav img {
+    margin-right: 15px;
+    height: 30px;
+}
+
+.header .nav h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+
+.header .nav h2 span {
+    color: #38CF7A;
+}
+.header .nav  .secand {
+    
+    position: relative;
+  
+}
+
+
+
+.header .nav .icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+.header .nav .icon span {
+    width: 100%;
+    height: 4px;
+    margin-bottom: 7px;
+    background-color: #10ee78;
+}
+
+.header .nav .icon span:nth-child(2) {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.header .nav .secand:hover span:nth-child(2) {
+    width: 100%;
+}
+
+.header .nav ul {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0%;
+    color: #ffffff;
+    background-color: #2f474bb6;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    display: none;
+    text-align: center;
+    z-index: 1;
+    width: 150px;
+    
+   
+}
+
+.header .nav .secand:hover ul {
+    display: block;
+    
+}
+
+.header .nav ul li {
+    margin: 0%;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.header .nav ul li:hover {
+    padding-left: 10px;
+}
+.header .nav ul li:first-of-type {
+    margin-top: 20px;
+    
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .nav ul li a:hover {
+    color: #38CF7A;
+}
+
+@media (max-width: 327px) {
+    .header .nav .countaner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nav ul {
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        margin-top: 0;
+    }
+    .header .nav .countaner .first {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .header .nav .icon {
+        margin-bottom: 20px;
+    }
+}
+
+.slider {
+    background-image: url(../img/169digitaltransformation-1170x600.jpg);
+    background-size: cover;
+    align-content: center;
+    height: calc(100vh - 60px);
+    position: relative;
+}
+
+.slider .slider-intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 237px;
+    max-width: 100%;
+}
+
+.slider .slider-intro h1 {
+    width: 100%;
+    margin: auto;
+    width: fit-content;
+    color: #ffff;
+    border-top: solid #fff 3px;
+    border-bottom: solid #fff 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.slider .slider-intro button {
+    background: none;
+    color: #fff;
+    border: solid #fff 2px;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+}
+
+/* end header  */
+
+/* start feature */
+
+.feature {
+    background-color: #ffffff;
+    
+}
+
+.feature .countaner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature .feat {
+    width: calc(100%/3);
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+@media (max-width : 1000px) {
+    .feature .feat {
+        width: 100%;
+    }
+
+}
+
+.feature .feat h1 {
+    padding-left: 10px;
+}
+
+.feature .feat p {
+    color: #777;
+    line-height: 25px;
+    border-left: solid #10ee78 3px;
+    padding-left: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* end feature */
+
+/* start about me  */
+
+.about {
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+.about .countaner {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.about .my-img {
+    overflow: hidden;
+    width: 40%;
+   
+}
+
+.about .my-img img {
+    height: 530px;
+    object-fit: cover;
+}
+
+
+.about .info {
+    width: 55%;
+    margin-left: 30px;
+    margin-right: 10px;
+    
+}
+
+.about .info p {
+    text-align: justify;
+    color: #444;
+    font-size: 17px;
+}
+
+.about .info .about-frist {
+    width: 100%;
+
+}
+
+.about .info .about-frist h1 {
+    color: #444;
+}
+
+.about .info h2 {
+    text-transform: capitalize;
+    color: #444;
+}
+
+.about .info .about-frist p:last-of-type {
+    margin-top: 30px;
+}
+
+.about .info .about-secand {
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.about .info .about-secand div {
+    float: left;
+    width: 50%;
+}
+
+.about .info .about-secand div h2 {
+    text-transform: capitalize;
+    color: #444;
+}
+
+.about .info .about-secand div .text {
+    float: left;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.about .info .about-secand div .img {
+    float: left;
+    width: 15%;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.about .info .about-secand div .img img {
+    width: 30px;
+}
+@media (max-width : 998px) {
+    .about .my-img {
+        display: none;
+    }
+    .about .info {
+        
+        width: 100%;
+        margin-left: 30px;
+        margin-right: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width : 662px) {
+    
+    .about .info .about-secand {
+        
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .info .about-secand div {
+        
+        width: 100%;
+    
+    }
+
+}
+
+/* end about me  */
+
+hr {
+    background-color: #ffffff;
+}
+
+/* start my skills */
+
+.my-skills {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #FFFFFF;
+   
+}
+.my-skills .countaner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-skills .my-skills-first , .my-skills .my-skills-secand {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+@media (max-width : 768px) {
+    .my-skills .my-skills-first, .my-skills .my-skills-secand {
+        width: 100%;
+    }
+    
+}
+
+.my-skills .my-skills-first p {
+    padding-right: 40px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.my-skills .my-skills-first button {
+    color: #37D280;
+    background: none;
+    padding: 10px;
+    border: solid #37D280 3px;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.my-skills .my-skills-secand div {
+    background-color: #ccc;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.my-skills .my-skills-secand h3 {
+    margin-top: 40px;
+}
+
+.my-skills .my-skills-secand div>span {
+    background-color: #37D280;
+    height: 25px;
+    width: 83%;
+    display: inline-block;
+}
+
+.my-skills .my-skills-secand div span span {
+    float: right;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* end my skills */
+
+/* start resume */
+
+.resume {
+    background-color: #F5F5F5;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.resume h1, .resume p, .resume button {
+    align-items: center;
+}
+
+.resume h1 {
+    margin-top: 30px;
+}
+
+.resume p {
+    padding: 15px 0 20px 0;
+    margin: auto;
+    width: 80%;
+}
+
+.resume .bol span {
+    height: 15px;
+    width: 15px;
+    background-color: #37D280;
+    border-radius: 30%;
+    display: inline-block;
+}
+
+/* end resume */
+
+/* start education */
+
+.educ {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.educ .countaner {
+    display: flex;
+    flex-wrap :wrap ;
+}
+
+.educ .educ-first, .educ .educ-secand {
+    width: 50%;
+    }
+    @media (max-width : 799px){
+        .educ .educ-first, .educ .educ-secand {
+        width: 100% ;
+        }
+    }
+
+
+.educ .educ-first p:first-of-type {
+    margin-top: 50px;
+}
+
+.educ .educ-first p {
+    margin-right: 40px;
+    text-align: justify;
+    color: #777;
+}
+
+.educ .educ-secand :first-child {
+    margin-top: 100px;
+}
+
+.educ .educ-secand button {
+    background-color: #37D280;
+    color: #FFFFFF;
+    border: solid #37D280 3px;
+    padding: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+/* end my education */
+
+.line {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    /* padding-top: 10px; padding-bottom: 10px;*/
+}
+
+/* start exp */
+
+.exp {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.exp .exp-first, .exp .exp-secand {
+    width: 50%;
+    float: left;
+}
+@media (max-width : 799px){
+    .exp .exp-first, .exp .exp-secand {
+    width: 100% ;
+    }
+}
+
+.exp .exp-first p:first-of-type {
+    margin-top: 40px;
+}
+
+.exp .exp-secand :first-child {
+    margin-top: 80px;
+}
+
+.exp .exp-secand button {
+    background-color: #37D280;
+    color: #FFFFFF;
+    border: solid #37D280 3px;
+    padding: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+/* end my exp */
+
+/* start resume */
+
+.comment {
+    background-color: #F5F5F5;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.comment .h1, .comment p, .comment button {
+    align-items: center;
+}
+
+/* end resume */
+
+/* start portofolio */
+
+.port {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.port .port-img {
+    display: flex;
+    flex-wrap : wrap ;
+    justify-content: center;
+}
+
+.port .port-img div {
+    width: 30%;
+    min-width: 300px;
+    margin: 10px;
+    float: left;
+}
+
+.port .port-img img {
+    width: 100%;
+}
+
+/* end portofokio */
+
+/* start contant  */
+
+.con {
+    background-color: #4B5557;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.con .countaner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.con .con-one {
+    width: 50%;
+    
+}
+
+.con .con-form {
+    width: 50%;
+    
+}
+
+.con .con-one p {
+    color: #FFFFFF;
+    padding-right: 30px;
+}
+
+.con .con-one h2 {
+    color: #FFFFFF;
+}
+
+.con .con-form input {
+    display: block;
+    width: 100%;
+    background-color: #999;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.con .con-form input:last-of-type {
+    min-height: 300px;
+}
+
+.con .con-form label {
+    color: #ccc;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+@media (max-width : 768px) {
+    .con .con-one , .con .con-form {
+        width: 100%;
+        
+    }
+    
+    
+}
+
+/* end contant  */
+
+/* start fotter  */
+
+.fotter {
+    background-color: #000000;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.fotter p {
+    font-size:small;
+    color: #FFFFFF;
+    margin: auto;
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+
+.fotter ul {
+    list-style: none;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.fotter ul li {
+    padding: 2px;
+}
+
+.fotter .fotter-img img {
+    width: 30px;
+    filter: opacity(50%);
+}
+
+/* end fotter  */
